@@ -34,7 +34,8 @@ def calculateAWAL(teamList, sizeOfLeague):
         numTeamsTied = teamsTied(teamList, team)
         outcome = team.getOutcome()
 
-        awal = (numTeamsBeat * leagueModifier) + (numTeamsTied * (leagueModifier / (numTeamsTied + 1))) - outcome
+        #awal = (numTeamsBeat * leagueModifier) + (numTeamsTied * (leagueModifier / (numTeamsTied + 1))) - outcome
+	awal = (numTeamsBeat * leagueModifier) + (numTeamsTied * (leagueModifier / 2)) - outcome
         print(team.getName() + "'s WAL: " + str(round(awal,3)))
     print("Add WAL to total team wins/losses for team's AWAL.")
 
