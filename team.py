@@ -23,7 +23,7 @@ class Team:
             return "tied"
 
     def printInfo(self):
-        print(self.name + " scored " + str(self.score) + " and " + self.gameOutcomeAsString())
+        print(f"{self.name} scored {self.score} and {self.gameOutcomeAsString()}")
 
 
 
